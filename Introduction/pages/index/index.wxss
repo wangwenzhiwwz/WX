@@ -1,0 +1,221 @@
+page{
+  color:#333333);
+  background-color:#FAFAFA;
+  font-size: 1rem;
+  font-family: '微软雅黑';
+}
+text{
+  margin: 0;
+  padding: 0;
+}
+.headbag{
+    width:100%;
+    height:14rem;
+    background-color:#FFCC00;
+    z-index: 0;
+    border-radius: 0rem 0rem 5rem 5rem; /* 左上、右上、右下、左下 */
+}
+.margin-10{
+  padding: 0.5rem;
+}
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.userinfo-avatar {
+  width: 150rpx;
+  height: 150rpx;
+  margin: 10rpx;
+  border-radius: 50%;
+  border: solid #fff 0.1rem;
+}
+.userinfo-nickname {
+  color: #333333;
+  font-size: 1rem;
+}
+.portrait{
+  width: 85%;
+  border-radius:10px;
+  height: 9rem;
+  background: #FAFAFA;
+  z-index: 1;
+  margin: 0 auto;
+  padding: 0.5rem;
+  -moz-box-shadow:2px 2px 5px #ffffff;
+  -webkit-box-shadow:2px 2px 5px #333333;
+  box-shadow:2px 2px 5px #CCCCCC;
+}
+.TrueName{
+  text-align: center;
+  padding: 0.3rem 1rem 1rem 1rem;
+  border-bottom: #808080 solid 0.1rpx;
+  font-size: 1.2rem;
+}
+
+.describe{
+  padding: 0.5rem;
+  font-size: 30rpx;
+  text-align: center;
+  color: #333333;
+}
+.describe view{
+  width: 100%;
+  height: 1.5rem;
+  line-height: 1.5rem;
+}
+.superiority{
+  font-family: '黑体';
+  width: 100%;
+  height: 2rem;
+  line-height: 2rem;
+  text-align: center;
+  color: rgb(143, 143, 123);
+  font-size: 0.85rem;
+  font-weight: 800;
+  margin: 0.8rem 0rem;
+  text-shadow:1px 1px 5px #d4d3d3;
+}
+.clear{
+  clear: both;
+}
+
+
+.flex-container {
+  width: 100%;
+  display: flex;
+  margin: 1rem auto;
+  background: #FAFAFA;
+}
+
+/* 以下为辅助样式 */
+
+.flex-container{
+  width:85%;
+  padding: 0.5rem;
+  -moz-box-shadow:2px 2px 5px #333333;
+  -webkit-box-shadow:2px 2px 5px #333333;
+  box-shadow:2px 2px 5px #CCCCCC;
+  border-radius:10px;
+}
+.flex-container .flex-item{
+  background-color: #FAFAFA; 
+}
+.flex-container .flex-item:first-child{ 
+  width: 20%;
+}
+.flex-container .flex-item:last-child{ 
+  width: 80%;
+  font-size: 0.7rem;
+}
+
+.flex-item1{
+  flex: 1 0 20%;
+  }
+.flex-item1 .image{
+  width: 3rem;
+  height: 7.5rem;
+  float: left;
+}
+.flex-item2{
+  flex: 2 0 80%;
+}
+
+.ledtop{
+  width: 100%;
+  line-height: 1.5rem;
+  margin: 0 auto;
+}
+.led{
+  font-size: 1rem;
+  width: 80%;
+  text-align:justify;
+  text-justify:distribute-all-lines;
+  text-align-last:justify;
+  font-weight: 800;
+  color: #FFCC00;
+  text-shadow:1px 1px 1px #FFFF3D;
+}
+.position{
+  float: left;
+  margin-right: 8rpx;
+}
+.deadline{
+  float: left;
+}
+.JobDescription{
+  display:block;
+  float: left;
+  width: 100%;
+  height: auto;
+  line-height: 1.2rem;
+}
+.JobDescription text{
+  line-height: 1rem;
+  font-size: 0.75rem;
+}
+
+.employment{
+  width: 85%;
+  background-color: #FAFAFA;
+  height: auto;
+  margin: 0 auto;
+  padding: 0.5rem;
+  -moz-box-shadow:2px 2px 5px #333333;
+  -webkit-box-shadow:2px 2px 5px #333333;
+  box-shadow:2px 2px 5px #CCCCCC;
+  font-size: 0.75rem;
+}
+.enddec{
+  width: 85%;
+  background-color: #fff;
+  height: auto;
+  margin: 0 auto;
+  padding: 0.5rem;
+  -moz-box-shadow:2px 2px 5px #333333;
+  -webkit-box-shadow:2px 2px 5px #333333;
+  box-shadow:2px 2px 5px #CCCCCC;
+  color: #000;
+  text-align: center;
+  font-size: 0.6rem;
+}
+
+.end{
+  margin: 2rem;
+  height: 1rem;
+  line-height: 2rem;
+}
+
+
+
+/*菜单*/
+
+.menu-warp {
+    background: #fff;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20rpx;
+    box-shadow: 0 0 20rpx rgba(0, 0, 0, 0.1);
+    margin: 30rpx 30rpx;
+    font-size: 32rpx;
+    line-height: 40rpx;
+    padding: 30rpx 40rpx;
+    position: relative;
+}
+
+.menu-warp .icon {
+    display: inline-block;
+    width: 40rpx;
+    height: 40rpx;
+    vertical-align: top;
+    margin-right: 10rpx;
+}
+
+.menu-warp .next {
+    display: inline-block;
+    width: 40rpx;
+    height: 40rpx;
+    vertical-align: top;
+    position: absolute;
+    right: 40rpx;
+    top: 30rpx;
+}

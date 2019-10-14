@@ -1,0 +1,180 @@
+<view class="headbag">
+    <view class='margin-10'>
+        <view class="userinfo">
+          <image class="userinfo-avatar" src="/imgs/resume/icon.jpg" background-size="cover"></image>
+          <text class="userinfo-nickname">{{userinfo.nickName}}</text>
+      </view>
+    </view>
+    <view class='portrait'>
+      <view class='TrueName'>王文志</view>
+      <view class='describe'>
+        <view>摄影/后期/设计/前端工程师</view>
+        <view>男  |  21岁  |  大专 </view>
+        <view bindtap='phonecall' data-mobile="15797750743">M. 15797750743 | E. 99218632@qq.com</view>
+      </view>
+    </view>
+
+<view class='superiority'>
+  可前端上马做交互，有品位有思维
+  </view>
+    <view class='clear'></view>
+
+
+<view class="flex-container">
+      <view class="flex-item flex-item1">
+          <image class='image' src='/imgs/resume/work.png'></image>
+      </view>
+      <view class="flex-item flex-item2">
+          <view class='ledtop'>
+              <view class='led'>浙江某某画业</view>
+              <view class='position'>任职:【 设计师/摄影师 】</view>
+              <view class='deadline'>期限:【 2017.6 - 2018.12 】</view>
+              <view class='JobDescription'>
+                <text>
+                主要负责淘宝，京东网店的产品主图详情设计及拍摄
+                后面由于视频的作用突出开始全职接手头图视频的拍摄制作
+                充分发挥了在学校闲暇时间锻炼的拍摄技能
+                最重要的是找到了自己的目标
+                
+                </text>
+              </view>
+            <view class='clear'></view>
+
+            <view class='led'>某某科技有限公司</view>
+              <view class='position'>任职:【 摄影师 】</view>
+              <view class='deadline'>期限:【 2017.12 — 至今 】</view>
+              <view class='JobDescription'>
+                <text>
+                产品拍摄
+                活动记录
+                对接市场微商部
+                拍摄记录短片
+                抖音视频制作
+                在此过程中不断磨砺自己的技能，更加充分的了解到摄影的前期与后期制作过程，并且接触到各种专业摄影设备及航拍机锻炼了让拍摄手法更加丰富
+
+
+                </text>
+              </view>
+              <view class='clear'></view>
+
+             
+          </view>
+
+      </view>
+</view>
+
+<view class="flex-container">
+      <view class="flex-item flex-item1">
+          <image class='image' src='/imgs/resume/Project.png'></image>
+      </view>
+      <view class="flex-item flex-item2">
+
+          <view class='ledtop'>
+              <view class='led'>港澳游记录片</view>
+              <view class='position'></view>
+              <view class='deadline'></view>
+              <view class='JobDescription'>
+                  该项目我主要负责使用专业摄影机及无人机进行拍摄记录，并剪辑短片及时分享所见
+              </view>
+          </view>
+          <view class='clear'></view>
+
+          <view class='ledtop'>
+              <view class='led'>杭州外出拍摄</view>
+              <view class='position'>开发周期：30个工作日</view>
+              <view class='deadline'>采用框架：Thinkphp3.2</view>
+              <view class='JobDescription'>
+                该项目我主要负责拍摄及后期
+              </view>
+          </view>
+          <view class='clear'></view>
+
+      </view>
+</view>
+
+<view class="flex-container">
+      <view class="flex-item flex-item1">
+          <image class='image' src='/imgs/resume/personal.png'></image>
+      </view>
+      <view class="flex-item flex-item2">
+          <view class='ledtop'>
+              <view class='JobDescription'>
+                <text>
+                会设计，能敲代码，热爱摄影
+                拥有丰富的社会实践经验
+
+
+                </text>
+              </view>
+          </view>
+      </view>
+</view>
+
+
+<view class="flex-container">
+      <view class="flex-item flex-item1">
+          <image class='image' src='/imgs/resume/self-description.png'></image>
+      </view>
+      <view class="flex-item flex-item2">
+          <view class='ledtop'>
+              <view class='JobDescription'>
+                <text>做人：忠实诚信,讲原则，说到做到，决不推卸责任；有自制力，做事情始终坚持有始有终，从不半途而废，性格开朗、为人诚恳、乐观向上、兴趣广泛、拥有较强的组织能力和适应能力、并具有较强的管理策划与组织管理协调能力。\n
+                    做事：做一行爱一行，我一直坚信，做自己喜欢的工作是世界上最令人开心的事情，会用100%的热情和精力投入到工作中！毕竟上班时间我是开心的，下班时间也是开心的。\n
+                    学习：一直都觉得人生就是一个不断学习的过程，我坚信人生只有通过学习，才能通往更美好的未来，实现人生自我实现的必由之路。
+                    </text>
+              </view>
+          </view>
+      </view>
+</view>
+
+<view class="flex-container">
+      <view class="flex-item flex-item1">
+          <image class='image' src='/imgs/resume/Education.png'></image>
+      </view>
+      <view class="flex-item flex-item2">
+          <view class='ledtop'>
+
+              <view class='led'>江西信息学院</view>
+              <view class='position'>专业:【 视觉设计 】</view>
+              <view class='deadline'>时间:【 2015.9 - 2018.7 】</view>
+              <view class='JobDescription'>
+                <text>广告设计，摄影，网页设计
+                </text>
+              </view>
+              <view class='clear'></view>
+
+          </view>
+      </view>
+</view>
+
+
+<view class="menu-warp">
+    <navigator hover-class='none' target="miniProgram" app-id='wx3f0a1c3fe19a306c'>
+        <image class="icon" src='../../assets/icons/level.png'></image>
+        相关摄影作品
+        <image class="next" src='../../assets/icons/next.png'></image>
+    </navigator>
+    </view>
+
+
+<button type="default" bindtap="calling" style='width:80%;margin-bottom:20px; background-color:#fc0'>拨打电话</button>
+
+
+
+  <view class='clear'></view>
+      <view class='employment'>
+      社交圈子：
+          <text>
+          Blog：http://wangwenzhi.top
+          Twitter：https://twitter.com/wangwenzhiwwz
+          GitHub: https://github.com/wangwenzhiwwz
+          </text>
+      </view>
+
+<view class='clear'></view>
+<view class='enddec'>
+    © 2018 WangWenzhi Corporation. All rights reserved. 
+</view>
+<view class='end'></view>
+
+</view>
