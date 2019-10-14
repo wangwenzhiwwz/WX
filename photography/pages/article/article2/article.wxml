@@ -1,0 +1,172 @@
+<view class="article-cover">
+    <image mode='aspectFill' src="https://s1.ax1x.com/2018/07/07/PeFmWD.jpg"></image>
+    <view class="title-warp">
+        <text class="classify">港澳游</text>
+        <text class="title">第一次去到香港澳门</text>
+    </view>
+</view>
+<view class="article-warp">
+    <view class="guide">
+        前段时间第二次外出拍摄之宾王路文创园拍摄取景
+    </view>
+    <view class="article-main">
+        <text class="photo-title"></text>
+        <text class="photo-description"></text>
+        <image src='https://s1.ax1x.com/2018/07/07/PeidVx.jpg'></image>
+    </view>
+    <view class="article-main">
+        <text class="photo-title"></text>
+        <text class="photo-description"></text>
+        <image src='https://s1.ax1x.com/2018/07/07/Pei0IK.jpg'></image>
+    </view>
+    <view class="article-main">
+        <text class="photo-title"></text>
+        <text class="photo-description"></text>
+        <image src='https://s1.ax1x.com/2018/07/07/PeijoV.jpg'></image>
+    </view>
+    <view class="article-main">
+        <text class="photo-title"></text>
+        <text class="photo-description"></text>
+        <image src='https://s1.ax1x.com/2018/07/07/Peiwa6.jpg'></image>
+    </view>
+    <view class="article-main">
+        <text class="photo-title"></text>
+        <text class="photo-description"></text>
+        <image src='https://s1.ax1x.com/2018/07/07/PeirGD.jpg'></image>
+    </view>
+    <view class="article-main">
+        <image src='https://s1.ax1x.com/2018/07/07/PeFykV.jpg'></image>
+    </view>
+    <view class="article-main">
+        <image src='https://s1.ax1x.com/2018/07/07/PeisRe.jpg'></image>
+    </view>
+    <view class="article-main">
+        <image src='https://s1.ax1x.com/2018/07/07/PeigsA.jpg'></image>
+    </view>
+    <view class="article-main">
+        <image src='https://s1.ax1x.com/2018/07/07/PeicMd.jpg'></image>
+    </view>
+    <view class="article-main">
+        <image src='https://s1.ax1x.com/2018/07/07/Pei5i8.jpg'></image>
+    </view>
+    <view class="article-main">
+        <image src='https://s1.ax1x.com/2018/07/07/PeFW6J.jpg'></image>
+    </view>
+    <view class="article-main">
+        <image src='https://s1.ax1x.com/2018/07/07/PeioRg.jpg'></image>
+    </view>
+    <view class="article-main">
+        <image src='https://s1.ax1x.com/2018/07/07/PeifdP.jpg'></image>
+    </view>
+    <view class="article-main">
+        <image src='https://s1.ax1x.com/2018/07/07/PeihIf.jpg'></image>
+    </view>
+    <view class="article-main">
+        <image src='https://s1.ax1x.com/2018/07/07/PeiWZt.jpg'></image>
+    </view>
+    <view class="article-main">
+        <image src='https://s1.ax1x.com/2018/07/07/PeiIJS.jpg'></image>
+    </view>
+    <view class="article-main">
+        <image src='https://s1.ax1x.com/2018/07/07/PeiTzQ.jpg'></image>
+    </view>
+    <view class="article-main">
+        <image src='https://s1.ax1x.com/2018/07/07/PeFuSe.jpg'></image>
+    </view>
+    <view class="article-main">
+        <image src='https://s1.ax1x.com/2018/07/07/PeFTk6.jpg'></image>
+    </view>
+    <view class="article-main">
+        <image src='https://s1.ax1x.com/2018/07/07/PeFvnA.jpg'></image>
+    </view>
+    <view class="article-main">
+        <image src='https://s1.ax1x.com/2018/07/07/PeFITx.jpg'></image>
+    </view>
+    <view class="article-main">
+        <image src='https://s1.ax1x.com/2018/07/07/PeF501.jpg'></image>
+    </view>
+    <view class="article-main">
+        <image src='https://s1.ax1x.com/2018/07/07/PeF4mR.jpg'></image>
+    </view>
+    <view class="article-main">
+        <image src='https://s1.ax1x.com/2018/07/07/PeFx0I.jpg'></image>
+    </view>
+    <view class="article-main">
+        <image src='https://s1.ax1x.com/2018/07/07/PeFPy9.jpg'></image>
+    </view>
+    <view class="article-main">
+        <image src='https://s1.ax1x.com/2018/07/07/PeiXd0.jpg'></image>
+    </view>
+    <view class="article-main">
+        <image src='https://s1.ax1x.com/2018/07/07/PeFEo6.jpg'></image>
+    </view>
+    <view class="article-main">
+        <image src='https://s1.ax1x.com/2018/07/07/PeFmWD.jpg'></image>
+    </view>
+    <view class="article-main">
+        <image src='https://s1.ax1x.com/2018/07/07/PekuNV.jpg'></image>
+    </view>
+    <view class="article-main">
+        <image src='https://s1.ax1x.com/2018/07/07/PekQ9U.jpg'></image>
+    </view>
+    <view class="article-main">
+        <image src='https://s1.ax1x.com/2018/07/07/PekkcQ.jpg'></image>
+    </view>
+    <view class="article-main">
+        <image src='https://s1.ax1x.com/2018/07/07/PeknA0.jpg'></image>
+    </view>
+    <view class="article-main">
+        <image src='https://s1.ax1x.com/2018/07/07/PeFXXd.jpg'></image>
+    </view>
+    <view class="article-main">
+        <image src='https://s1.ax1x.com/2018/07/07/Pek9tf.jpg'></image>
+    </view>
+    <view class="article-main">
+        <image src='https://s1.ax1x.com/2018/07/07/PeiOZq.jpg'></image>
+    </view>
+    <view class="article-main">
+        <image src='https://s1.ax1x.com/2018/07/07/PeFSWF.jpg'></image>
+    </view>
+    <view class="article-main">
+        <image src='https://s1.ax1x.com/2018/07/07/PeFiLR.jpg'></image>
+    </view>
+    <view class="article-main">
+        <image src='https://s1.ax1x.com/2018/07/07/PeFKQH.jpg'></image>
+    </view>
+    <view class="article-main">
+        <image src='https://s1.ax1x.com/2018/07/07/PeF1eI.jpg'></image>
+    </view>
+    <view class="article-main">
+        <image src='https://s1.ax1x.com/2018/07/07/PekUN6.jpg'></image>
+    </view>
+    <view class="article-main">
+        <image src='https://s1.ax1x.com/2018/07/07/PekyDA.jpg'></image>
+    </view>
+    <view class="article-main">
+        <image src='https://s1.ax1x.com/2018/07/07/PekAXj.jpg'></image>
+    </view>
+    <view class="article-main">
+        <image src='https://s1.ax1x.com/2018/07/07/PekNAx.jpg'></image>
+    </view>
+    <view class="article-main">
+        <image src='https://s1.ax1x.com/2018/07/07/PekBge.jpg'></image>
+    </view>
+    <view class="end">
+        王文志 原创作品
+    </view>
+    <view class="tool-bar">
+        <view class="tool">
+            <image src='../../../assets/icons/like.png'></image>
+            1000
+        </view>
+        <navigator hover-class='none' class="tool" url='../commentList/commentList'>
+            <image src='../../../assets/icons/comment.png'></image>
+            2600
+        </navigator>
+        <view class="tool">
+            <button open-type='share'></button>
+            <image src='../../../assets/icons/share.png'></image>
+            2110
+        </view>
+    </view>
+</view>

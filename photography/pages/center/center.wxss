@@ -1,0 +1,114 @@
+page {
+    background: #f3f3f3;
+}
+
+.center_bg {
+    width: 100%;
+    position: absolute;
+    height: 330rpx;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.avatar-warp {
+    margin: 160rpx 30rpx 0;
+    background: rgba(255, 255, 255, 0.99);
+    border-radius: 20rpx;
+    box-shadow: 0 0 20rpx rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 2;
+}
+
+.avatar-warp .avatar {
+    display: block;
+    width: 160rpx;
+    height: 160rpx;
+    border-radius: 50%;
+    border: 4rpx solid #fff;
+    margin: 0 auto;
+    position: relative;
+    top: -80rpx;
+    box-shadow: 0 0 20rpx rgba(0, 0, 0, 0.4);
+    margin-bottom: -80rpx;
+}
+
+.nickname {
+    text-align: center;
+    font-size: 46rpx;
+    font-weight: bold;
+    padding: 20rpx 0 10rpx;
+}
+
+.user-info {
+    text-align: center;
+    font-size: 28rpx;
+    line-height: 40rpx;
+    color: #999;
+}
+
+.user-info image {
+    display: inline-block;
+    width: 40rpx;
+    height: 40rpx;
+    vertical-align: top;
+    margin-right: 8rpx;
+}
+
+.article-info {
+    overflow: hidden;
+    padding: 40rpx 0;
+}
+
+.article-item {
+    width: 33.33%;
+    float: left;
+    text-align: center;
+    font-size: 28rpx;
+    color: #666;
+    border-right: 1px solid #ededed;
+}
+
+.article-info .article-item:last-child {
+    border-right: none;
+}
+
+.article-item .num {
+    font-size: 46rpx;
+    display: block;
+    padding-bottom: 8rpx;
+    color: #222;
+    font-weight: bold;
+}
+
+/*菜单*/
+
+.menu-warp {
+    background: #fff;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20rpx;
+    box-shadow: 0 0 20rpx rgba(0, 0, 0, 0.1);
+    margin: 30rpx 30rpx;
+    font-size: 32rpx;
+    line-height: 40rpx;
+    padding: 30rpx 40rpx;
+    position: relative;
+}
+
+.menu-warp .icon {
+    display: inline-block;
+    width: 40rpx;
+    height: 40rpx;
+    vertical-align: top;
+    margin-right: 10rpx;
+}
+
+.menu-warp .next {
+    display: inline-block;
+    width: 40rpx;
+    height: 40rpx;
+    vertical-align: top;
+    position: absolute;
+    right: 40rpx;
+    top: 30rpx;
+}

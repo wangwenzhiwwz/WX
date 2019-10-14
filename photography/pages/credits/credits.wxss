@@ -1,0 +1,91 @@
+/* pages/credits/credits.wxss */
+
+.credit-top {
+    background: #5756c0;
+    padding-bottom: 120rpx;
+}
+
+.credit-top .credits {
+    font-size: 80rpx;
+    color: #fff;
+    text-align: center;
+    display: block;
+    padding-top: 40rpx;
+}
+
+.credit-top .name {
+    padding-top: 10rpx;
+    font-size: 32rpx;
+    color: #fff;
+    text-align: center;
+    display: block;
+}
+
+.credit-top .name image {
+    display: inline-block;
+    width: 36rpx;
+    height: 36rpx;
+    vertical-align: middle;
+    margin-right: 10rpx;
+}
+
+.credits-rule {
+    background: #fff;
+    margin: -70rpx 40rpx 0 40rpx;
+    border-radius: 20rpx;
+    box-shadow: 0 0 20rpx rgba(0, 0, 0, 0.1);
+}
+
+.credits-rule .title {
+    line-height: 100rpx;
+    color: #5756c0;
+    font-size: 32rpx;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.credits-rule .item {
+    overflow: hidden;
+    border-bottom: 1px solid #efefef;
+    line-height: 80rpx;
+    padding: 0 40rpx;
+    margin: 0 30rpx;
+}
+
+.credits-rule .item .count {
+    font-size: 28rpx;
+    display: block;
+    width: 50%;
+    float: left;
+    color: #5756c0;
+}
+
+.credits-rule .item  .name {
+    font-size: 30rpx;
+    color: #333;
+    width: 50%;
+    float: left;
+    text-align: right;
+}
+
+.info {
+    font-size: 24rpx;
+    display: block;
+    color: #666;
+    line-height: 80rpx;
+    text-align: right;
+    padding: 0 20rpx;
+}
+
+.release-btn {
+    display: block;
+    width: 400rpx;
+    background: #5756c0;
+    line-height: 80rpx;
+    height: 80rpx;
+    margin: 60rpx auto 0;
+    border-radius: 40rpx;
+    color: #fff;
+    font-size: 28rpx;
+    text-align: center;
+}

@@ -1,0 +1,10 @@
+{
+    "navigationBarTitleText": "王文志摄影展",
+    "navigationBarBackgroundColor": "#f2f2f2",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light",
+    "disableScroll": true,
+    "usingComponents": {
+        "loading": "/pages/component/loading/loading"
+    }
+}

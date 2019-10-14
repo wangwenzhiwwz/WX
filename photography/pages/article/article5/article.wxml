@@ -1,0 +1,68 @@
+<view class="article-cover">
+    <image mode='aspectFill' src="http://b244.photo.store.qq.com/psb?/V14TLziZ1pyFkL/KXlm1vkYG17zFZ7A9rs1bpp*F8JPf1B4*ahsjlAwaqo!/m/dPQAAAAAAAAAnull&bo=UAY4BFAGOAQRBzA!&rf=photolist&t=5"></image>
+    <view class="title-warp">
+        <text class="classify">义乌打卡</text>
+        <text class="title">义乌新光汇街拍</text>
+    </view>
+</view>
+<view class="article-warp">
+    <view class="guide">
+        前段时间第二次外出拍摄之宾王路文创园拍摄取景
+    </view>
+    <view class="article-main">
+        <text class="photo-title"></text>
+        <text class="photo-description"></text>
+        <image src='http://b364.photo.store.qq.com/psb?/V14TLziZ1pyFkL/bt2YU3HpWGJf0vBPUAI2Rt55.neG59t7rXkAvJgSa44!/m/dGwBAAAAAAAAnull&bo=UAY4BFAGOAQRBzA!&rf=photolist&t=5'></image>
+    </view>
+    <view class="article-main">
+        <text class="photo-title"></text>
+        <text class="photo-description"></text>
+        <image src='http://b221.photo.store.qq.com/psb?/V14TLziZ1pyFkL/FwPu3SllZtsrF5LbyM5pIU0HIY0VXZ4Qp9YbL4xQM5I!/m/dN0AAAAAAAAAnull&bo=UAY4BFAGOAQRBzA!&rf=photolist&t=5'></image>
+    </view>
+    <view class="article-main">
+        <text class="photo-title"></text>
+        <text class="photo-description"></text>
+        <image src='http://b389.photo.store.qq.com/psb?/V14TLziZ1pyFkL/zMLxOtfEI01nF5yckk6Gxp9uQ6TgwAss2Odm8PW.uO0!/m/dIUBAAAAAAAAnull&bo=OARGBTgERgURBzA!&rf=photolist&t=5'></image>
+    </view>
+    <view class="article-main">
+        <text class="photo-title"></text>
+        <text class="photo-description"></text>
+        <image src='http://b244.photo.store.qq.com/psb?/V14TLziZ1pyFkL/o1CxU8Ikbdc6wTOBYyevnwvlxJFL5OyRDgOCXiN7O9U!/m/dPQAAAAAAAAAnull&bo=UAY4BFAGOAQRBzA!&rf=photolist&t=5'></image>
+    </view>
+    <view class="article-main">
+        <text class="photo-title"></text>
+        <text class="photo-description"></text>
+        <image src='http://b389.photo.store.qq.com/psb?/V14TLziZ1pyFkL/KrrR2AI9K2Niza19m8mkvknF9nOuqDi6HDxdSMvosyk!/m/dIUBAAAAAAAAnull&bo=OARGBTgERgURBzA!&rf=photolist&t=5'></image>
+    </view>
+    <view class="article-main">
+        <image src='http://b244.photo.store.qq.com/psb?/V14TLziZ1pyFkL/HNEPF4IA7we5W4I*687MZN8uHF6xxF1wNFMbUk9qjm8!/m/dPQAAAAAAAAAnull&bo=owV1A6MFdQMRBzA!&rf=photolist&t=5'></image>
+    </view>
+    <view class="article-main">
+        <image src='http://b14.photo.store.qq.com/psb?/V14TLziZ1pyFkL/DXFOwnfWtWUhFGS4h8Vj0IFatAmqRikvTxTUxwgAB3c!/m/dA4AAAAAAAAAnull&bo=UAY4BFAGOAQRBzA!&rf=photolist&t=5'></image>
+    </view>
+    <view class="article-main">
+        <image src='http://b244.photo.store.qq.com/psb?/V14TLziZ1pyFkL/XF6rIIht0ATp3sCG.sPCx36BMaqLl0lcm5L1AusNO*c!/m/dPQAAAAAAAAAnull&bo=UAY4BFAGOAQRBzA!&rf=photolist&t=5'></image>
+    </view>
+    <view class="article-main">
+        <image src='http://b364.photo.store.qq.com/psb?/V14TLziZ1pyFkL/i8EhHRG5sw6cOjUBB61W4a9aS2S9chRL.r37yxZXktg!/m/dGwBAAAAAAAAnull&bo=UAY4BFAGOAQRBzA!&rf=photolist&t=5'></image>
+    </view>
+    
+    <view class="end">
+        王文志 原创作品
+    </view>
+    <view class="tool-bar">
+        <view class="tool">
+            <image src='../../../assets/icons/like.png'></image>
+            1010
+        </view>
+        <navigator hover-class='none' class="tool" url='../commentList/commentList'>
+            <image src='../../../assets/icons/comment.png'></image>
+            260
+        </navigator>
+        <view class="tool">
+            <button open-type='share'></button>
+            <image src='../../../assets/icons/share.png'></image>
+            210
+        </view>
+    </view>
+</view>

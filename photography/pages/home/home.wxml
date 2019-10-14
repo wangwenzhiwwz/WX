@@ -1,0 +1,22 @@
+<!--pages/home/home.wxml-->
+<loading></loading>
+
+<swiper class="home-warp" duration='300' next-margin="40rpx" previous-margin="40rpx">
+  <block wx:for="{{swiperData}}" > 
+    <swiper-item class="home-item">
+        <navigator class="article-warp"  url='{{item.url}}'>
+            <image class="main-img" mode='aspectFill' src='{{item.imgUrl}}' ></image>
+            <view class="article-info">
+                <view class="title-warp">
+                    <text class="classify"></text>
+                    <text class="title">{{item.title}}</text>
+                    <text class="description">{{item.discription}}</text>
+                </view>
+                <view class="article-view">
+                    <image src='../../assets/icons/views_gray.png'></image> {{item.look}}
+                </view>
+            </view>
+        </navigator>
+    </swiper-item>
+  </block>   
+</swiper>

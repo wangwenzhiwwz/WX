@@ -1,0 +1,13 @@
+/**app.wxss**/
+
+/* 模型盒设置 */
+
+view, text, input, textarea, button, navigator, swiper-item {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+
+navigator:hover {
+    background: none;
+}

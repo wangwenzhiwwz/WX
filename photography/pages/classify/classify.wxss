@@ -1,0 +1,68 @@
+page {
+    background: #f2f2f2;
+}
+
+.classify-title {
+    padding: 25rpx 40rpx;
+    font-size: 70rpx;
+    font-weight: bold;
+    display: block;
+}
+
+.article-item {
+    margin: 20rpx 40rpx;
+    background: #fff;
+    border-radius: 10rpx;
+    box-shadow: 6rpx 6rpx 14rpx rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+}
+
+.article-item .article-cover {
+    width: 200rpx;
+    height: 200rpx;
+    float: left;
+}
+
+.article-item .article-info {
+    float: left;
+    width: 470rpx;
+    padding: 10rpx 30rpx;
+}
+
+.article-info .title {
+    font-size: 32rpx;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    letter-spacing: 0.05rem;
+    display: block;
+    padding: 10rpx;
+}
+
+.article-info .description {
+    font-size: 28rpx;
+    color: #999;
+    display: block;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+}
+
+.views {
+    text-align: right;
+    line-height: 40rpx;
+    font-size: 24rpx;
+    color: #999;
+    margin-top: 30rpx;
+}
+
+.views image {
+    display: inline-block;
+    width: 30rpx;
+    height: 30rpx;
+    vertical-align: top;
+    margin-top: 6rpx;
+    margin-right: 10rpx;
+}

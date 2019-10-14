@@ -1,0 +1,36 @@
+<view class="credit-top">
+    <text class="credits">{{credits}}</text>
+    <view class="name">
+        <image src="../../assets/icons/level-white.png"></image>{{level}}
+    </view>
+</view>
+
+<view class="credits-rule">
+    <view class="title">积分规则</view>
+    <view class="item">
+        <text class="count">0 ~ 49</text>
+        <text class="name">摄影菜鸟</text>
+    </view>
+    <view class="item">
+        <text class="count">50 ~ 199</text>
+        <text class="name">摄影新手</text>
+    </view>
+    <view class="item">
+        <text class="count">200 ~ 399</text>
+        <text class="name">摄影爱好者</text>
+    </view>
+    <view class="item">
+        <text class="count">400 ~ 999</text>
+        <text class="name">摄影发烧友</text>
+    </view>
+    <view class="item">
+        <text class="count">1000 ~ 1999</text>
+        <text class="name">专业摄影师</text>
+    </view>
+    <view class="item">
+        <text class="count">2000 ~</text>
+        <text class="name">摄影大咖</text>
+    </view>
+    <text class="info">点赞 1 积分、评论 5 积分、转发 3 积分</text>
+</view>
+<navigator class="release-btn" open-type="switchTab" url="../hot/hot">浏览作品</navigator>

@@ -1,0 +1,79 @@
+page {
+    background: #f2f2f2;
+    height: 100%;
+}
+
+.home-warp {
+    height: 100%;
+}
+
+.home-item {
+    padding: 20rpx 15rpx;
+}
+
+.article-warp {
+    height: 98%;
+    background: #fff;
+    border-radius: 20rpx;
+    width: 640rpx;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 6rpx 6rpx 14rpx rgba(0, 0, 0, 0.05);
+}
+
+.main-img {
+    display: block;
+    height: 100%;
+    border-radius: 20rpx;
+    width: 640rpx;
+}
+
+.article-info {
+    padding: 40rpx;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 640rpx;
+    background: rgba(255, 255, 255, 0.95);
+}
+
+.title-warp .classify {
+    font-size: 30rpx;
+    color: #5756c0;
+    display: block;
+}
+
+.title-warp .title {
+    padding: 0rpx 0 8rpx;
+    font-size: 40rpx;
+    font-weight: bold;
+    display: block;
+}
+
+.title-warp .description {
+    font-size: 28rpx;
+    color: #666;
+    display: block;
+    width: 400rpx;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.article-view {
+    position: absolute;
+    right: 40rpx;
+    bottom: 40rpx;
+    color: #999;
+    font-size: 28rpx;
+    line-height: 40rpx;
+    height: 40rpx;
+}
+
+.article-view image {
+    display: inline-block;
+    width: 40rpx;
+    height: 40rpx;
+    vertical-align: top;
+}

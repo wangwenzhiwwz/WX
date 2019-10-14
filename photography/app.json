@@ -1,0 +1,54 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/classify/classify",
+    "pages/hot/hot",
+    "pages/center/center",
+    "pages/credits/credits",
+    "pages/resume/resume",
+    "pages/commentList/commentList",
+    "pages/article/article0/article",
+    "pages/article/article/article",
+    "pages/article/article1/article",
+    "pages/article/article2/article",
+    "pages/article/article3/article",
+    "pages/article/article4/article",
+    "pages/article/article5/article",
+    "pages/article/video1/article",
+    "pages/article/video2/article",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "wangwenzhi",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#999",
+    "selectedColor": "#5756c0",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "/assets/icons/home.png",
+        "selectedIconPath": "/assets/icons/home_active.png"
+      },
+      {
+        "pagePath": "pages/hot/hot",
+        "text": "分类",
+        "iconPath": "/assets/icons/classify.png",
+        "selectedIconPath": "/assets/icons/classify_active.png"
+      },
+      {
+        "pagePath": "pages/center/center",
+        "text": "我的",
+        "iconPath": "/assets/icons/center.png",
+        "selectedIconPath": "/assets/icons/center_active.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

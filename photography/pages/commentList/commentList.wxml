@@ -1,0 +1,43 @@
+<view class="comment-list">
+    <view class="comment-title"> 评论列表（{{commentList.length}}）</view>
+    <view class="msg-item" wx:for="{{commentList}}" wx:key="comment">
+        <!--  评论用户头像  -->
+        <image class="avatar" src="{{item.userInfo.avatarUrl}}"></image>
+        <view class="msg-con">
+            <!--  评论用户信息  -->
+            <view class="name">
+                <view>
+                    <text class="comment-user-name">{{item.userInfo.nickname}}</text>
+                    <image class="level-icon" src='../../assets/icons/level.png'></image>
+                    <text class="level-name">{{item.userInfo.level}}</text>
+                </view>
+
+                <text class="date">{{item.comment.date}}</text>
+                <view class="prise" bindtap='commentPraise' data-comment-id="{{item.comment.id}}" data-praise="{{item.comment.praise}}">
+                    <image src="../../assets/icons/like.png"></image>
+                    <text>{{item.comment.praise}}</text>
+                </view>
+            </view>
+            <!--  评论内容  -->
+            <text class="msg" bindtap='reply' data-user="{{item.userInfo.nickname}}" data-comment-id="{{item.comment.id}}">{{item.comment.comment}}</text>
+            <!--  回复信息  -->
+            <view class="reply-list" wx:if="{{!item.reply.length == 0}}">
+                <view class="reply-item" wx:for="{{item.reply}}" wx:key="reply">
+                    <view>
+                        <image src="{{item.replyUser.avatarUrl}}" />
+                        <text class="relpy-name">{{item.replyUser.nickname}}</text>
+                    </view>
+                    <view class="reply-text">
+                        <text class="text">{{item.replyMsg.text}}</text>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <text class="end" wx:if="{{!commentList.length == 0}}">我是有底线的</text>
+    <text class="end" wx:else>还没有评论哦！</text>
+</view>
+
+<view class="form-warp">
+    <input type="text" focus="{{focus}}" bindblur="inputBlur" placeholder="{{placeHolder}}" value="{{msg}}" confirm-type="send" bindconfirm="sendComment" />
+</view>

@@ -1,0 +1,55 @@
+<view class="article-cover">
+    <image mode='aspectFill' src="http://b244.photo.store.qq.com/psb?/V14TLziZ1pyFkL/XF3yS*MliMRnR9zQcRu6DJ0L1w7Xtht8m4g09ou9SuU!/b/dPQAAAAAAAAA&bo=UAY4BFAGOAQRBzA!&rf=viewer_4"></image>
+    <view class="title-warp">
+        <text class="classify">文创园</text>
+        <text class="title">外出拍摄之宾王路文创园拍摄取景</text>
+    </view>
+</view>
+<view class="article-warp">
+    <view class="guide">
+        前段时间第二次外出拍摄之宾王路文创园拍摄取景
+    </view>
+    <view class="article-main">
+        <text class="photo-title">空间压缩</text>
+        <text class="photo-description">某个通道</text>
+        <image src='http://b244.photo.store.qq.com/psb?/V14TLziZ1pyFkL/s3qnSH59v1YdNojXd9lYqnOJKzec0*N1XTgLJ5Tk.n8!/b/dPQAAAAAAAAA&bo=AAUABQAFAAURBzA!&rf=viewer_4'></image>
+    </view>
+    <view class="article-main">
+        <text class="photo-title">夕阳</text>
+        <text class="photo-description">球网剪影</text>
+        <image src='http://b221.photo.store.qq.com/psb?/V14TLziZ1pyFkL/7RNmIVupNyrbctly0YLQUF4TY*rBJQ9IKSHKlAB2XPs!/b/dN0AAAAAAAAA&bo=UAY4BFAGOAQRBzA!&rf=viewer_4'></image>
+    </view>
+    <view class="article-main">
+        <text class="photo-title">设计中心</text>
+        <text class="photo-description">发现身边的美</text>
+        <image src='http://b244.photo.store.qq.com/psb?/V14TLziZ1pyFkL/zYGznU4A5Mbn4P85HyhyimL424oA3pVbMSifdYr0Oc8!/b/dPQAAAAAAAAA&bo=UAY4BFAGOAQRBzA!&rf=viewer_4'></image>
+    </view>
+    <view class="article-main">
+        <text class="photo-title">框架</text>
+        <text class="photo-description">发现身边的美</text>
+        <image src='http://b244.photo.store.qq.com/psb?/V14TLziZ1pyFkL/xYnZ4Q2wSaQijaVbs.hoIClXCnJxVweSh3K.TIT.7YE!/m/dPQAAAAAAAAAnull&bo=UAY4BFAGOAQRBzA!&rf=photolist&t=5'></image>
+    </view>
+    <view class="article-main">
+        <text class="photo-title">广场</text>
+        <text class="photo-description">发现身边的美</text>
+        <image src='http://b244.photo.store.qq.com/psb?/V14TLziZ1pyFkL/Mt3qas1lGbcTHxiJvGeMBn.56YqCBBaG99nIvww48qU!/b/dPQAAAAAAAAA&bo=AAoABQAKAAURBzA!&rf=viewer_4'></image>
+    </view>
+    <view class="end">
+        王文志 原创作品
+    </view>
+    <view class="tool-bar">
+        <view class="tool">
+            <image src='../../../assets/icons/like.png'></image>
+            100
+        </view>
+        <navigator hover-class='none' class="tool" url='../commentList/commentList'>
+            <image src='../../../assets/icons/comment.png'></image>
+            260
+        </navigator>
+        <view class="tool">
+            <button open-type='share'></button>
+            <image src='../../../assets/icons/share.png'></image>
+            210
+        </view>
+    </view>
+</view>

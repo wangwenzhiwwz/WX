@@ -1,0 +1,176 @@
+/*评论列表*/
+
+.comment-list {
+    padding-bottom: 102rpx;
+    border-top: 1px solid #efefef;
+}
+
+.comment-list .comment-title {
+    background: #f2f2f2;
+    line-height: 88rpx;
+    font-size: 30rpx;
+    padding: 0 24rpx;
+}
+
+.comment-list .msg-item {
+    border-bottom: 1px solid #efefef;
+    background: #fff;
+    margin-top: 1px;
+    overflow: hidden;
+    padding: 20rpx;
+    padding-top: 30rpx;
+}
+
+.comment-list .msg-item .avatar {
+    width: 80rpx;
+    height: 80rpx;
+    border-radius: 50%;
+    border: 1px solid #eee;
+    float: left;
+}
+
+.comment-list .msg-item .msg-con {
+    width: 600rpx;
+    float: left;
+    margin-left: 20rpx;
+}
+
+.msg-con .name {
+    font-size: 32rpx;
+    color: #333;
+    display: block;
+    position: relative;
+}
+
+.comment-user-name {
+    margin-top: -2rpx;
+    display: inline-block;
+    max-width: 300rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+
+.name .level-icon {
+    display: inline-block;
+    width: 28rpx;
+    height: 28rpx;
+    vertical-align: middle;
+    margin-right: 4rpx;
+}
+
+.name .level-name {
+    font-size: 24rpx;
+    color: #999;
+    vertical-align: middle;
+}
+
+.msg-con .name text.date {
+    display: block;
+    font-size: 24rpx;
+    color: #999;
+}
+
+.msg-con .name .prise {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    right: 24rpx;
+}
+
+.msg-con .name .prise text {
+    line-height: 40rpx;
+    height: 40rpx;
+    font-size: 32rpx;
+    color: #666;
+    display: inline-block;
+    padding-left: 2rpx;
+    margin-left: 10rpx;
+}
+
+.msg-con .name .prise image {
+    display: inine-block;
+    width: 40rpx;
+    height: 40rpx;
+    vertical-align: top;
+}
+
+.msg-con .msg {
+    display: block;
+    font-size: 32rpx;
+    color: #222;
+    line-height: 40rpx;
+    padding: 30rpx 0;
+}
+
+/*回复列表*/
+
+.reply-list {
+    background: #f1f1f1;
+    border-radius: 8rpx;
+    padding: 20rpx;
+    padding-bottom: 0;
+}
+
+.reply-item {
+    font-size: 28rpx;
+    color: #555;
+    margin-bottom: 20rpx;
+    border-bottom: 1px solid #ddd;
+}
+
+.reply-item:last-child {
+    border-bottom: none;
+}
+
+.reply-item image {
+    display: inline-block;
+    width: 40rpx;
+    height: 40rpx;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 10rpx;
+}
+
+.reply-item .relpy-name {
+    color: #4963ae;
+    font-size: 28rpx;
+}
+
+.reply-text {
+    padding: 20rpx;
+    line-height: 40rpx;
+}
+
+.end {
+    font-size: 24rpx;
+    color: #ccc;
+    display: block;
+    padding: 20rpx;
+    text-align: center;
+}
+
+/*  输入内容  */
+
+.form-warp {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    border-top: 1px solid #eee;
+    z-index: 3;
+    height: 102rpx;
+}
+
+.form-warp input {
+    display: block;
+    border: 1px solid #eee;
+    font-size: 28rpx;
+    margin: 10rpx 24rpx;
+    line-height: 76rpx;
+    height: 76rpx;
+    border-radius: 6rpx;
+    padding: 0 20rpx;
+}

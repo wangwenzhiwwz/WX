@@ -1,0 +1,47 @@
+<view>
+    <view class="classify-title">
+        风景摄影
+    </view>
+    <view class="aritcle-list">
+        <navigator hover-class='none' class="article-item">
+            <image class="article-cover" mode='aspectFill' src='../../assets/test/1.jpg'></image>
+            <view class="article-info">
+                <text class="title">IOS11人机交互指南详解</text>
+                <text class="description">让你的应用程序无缝整合Apple平台的UI资源和交互规则。不知道为什么发的优酷视频是无法显示的，放弃了，就不放上来了。</text>
+                <view class="views"><image src='../../assets/icons/views_gray.png'></image>250</view>
+            </view>
+        </navigator>
+        <navigator hover-class='none' class="article-item">
+            <image class="article-cover" mode='aspectFill' src='../../assets/test/1.jpg'></image>
+            <view class="article-info">
+                <text class="title">IOS11人机交互指南详解</text>
+                <text class="description">让你的应用程序无缝整合Apple平台的UI资源和交互规则。不知道为什么发的优酷视频是无法显示的，放弃了，就不放上来了。</text>
+                <view class="views"><image src='../../assets/icons/views_gray.png'></image>250</view>
+            </view>
+        </navigator>
+        <navigator hover-class='none' class="article-item">
+            <image class="article-cover" mode='aspectFill' src='../../assets/test/1.jpg'></image>
+            <view class="article-info">
+                <text class="title">IOS11人机交互指南详解</text>
+                <text class="description">让你的应用程序无缝整合Apple平台的UI资源和交互规则。不知道为什么发的优酷视频是无法显示的，放弃了，就不放上来了。</text>
+                <view class="views"><image src='../../assets/icons/views_gray.png'></image>250</view>
+            </view>
+        </navigator>
+        <navigator hover-class='none' class="article-item">
+            <image class="article-cover" mode='aspectFill' src='../../assets/test/1.jpg'></image>
+            <view class="article-info">
+                <text class="title">IOS11人机交互指南详解</text>
+                <text class="description">让你的应用程序无缝整合Apple平台的UI资源和交互规则。不知道为什么发的优酷视频是无法显示的，放弃了，就不放上来了。</text>
+                <view class="views"><image src='../../assets/icons/views_gray.png'></image>250</view>
+            </view>
+        </navigator>
+        <navigator hover-class='none' class="article-item">
+            <image class="article-cover" mode='aspectFill' src='../../assets/test/1.jpg'></image>
+            <view class="article-info">
+                <text class="title">IOS11人机交互指南详解</text>
+                <text class="description">让你的应用程序无缝整合Apple平台的UI资源和交互规则。不知道为什么发的优酷视频是无法显示的，放弃了，就不放上来了。</text>
+                <view class="views"><image src='../../assets/icons/views_gray.png'></image>250</view>
+            </view>
+        </navigator>
+    </view>
+</view>
