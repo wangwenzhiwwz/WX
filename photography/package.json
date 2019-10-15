@@ -1,0 +1,22 @@
+{
+  "name": "photography",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wangwenzhiwwz/WX.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wangwenzhiwwz/WX/issues"
+  },
+  "homepage": "https://github.com/wangwenzhiwwz/WX#readme",
+  "dependencies": {
+    "apifm-wxapi": "^1.31.0"
+  }
+}
