@@ -1,98 +1,36 @@
 <!--pages/hot/hot.wxml-->
 <view class="top-title">
-    <text class="main-title" >热门推荐</text>
-    <text></text>
+  <text class="main-title">热门推荐</text>
+  <text></text>
 </view>
-<swiper previous-margin="30rpx" duration="300" next-margin="30rpx">
-    <block wx:for="{{swiperData}}" >
-        <swiper-item >
-            <view class="swiper-item">
-                <image src="{{item.imgUrl}}"  mode='aspectFill' class="slide-image"  />
-                <view class="article-info" >
-                    <text class="title" >{{item.title}}</text>
-                    <text class="discription">{{item.discription}}</text>
-                </view>
-                <view class="main-view">
-                    <image src='../../assets/icons/views.png'></image> {{item.look}}</view>
-            </view>
-        </swiper-item>
-    </block>
+<swiper circular="true" previous-margin="30rpx" duration="300" next-margin="30rpx">
+  <swiper-item wx:for="{{cmsRecommendCategories}}" wx:key="{{item.id}}">
+    <view class="swiper-item">
+      <image src="{{item.icon}}" mode='aspectFill' class="slide-image" />
+      <view class="article-info">
+        <text class="title">{{item.name}}</text>
+        <text class="discription"></text>
+      </view>
+    </view>
+  </swiper-item>
 </swiper>
-<view class="classify">
-    <view class="classify-title">街头摄影
-        <navigator class="view-all" url=''>查看全部</navigator>
-    </view>
-    <swiper previous-margin="30rpx" duration="300" next-margin="30rpx" class="article-warp">
-        <swiper-item>
-          <block wx:for="{{swiperData1}}">
-            <navigator hover-class="none" class="article-item" url='{{item.url}}'>
-                <image class="article-clover" src='{{item.imgUrl}}'></image>
-                <view class="article-info">
-                    <text class="article-title">{{item.title}}</text>
-                    <text class="article-description">{{item.discription}}</text>
-                    <view class="article-view">
-                        <image src='../../assets/icons/views_gray.png'></image>{{item.look}}</view>
-                </view>
-            </navigator>
-          </block>
-            
-        </swiper-item>
-        
-        <swiper-item>
-            <block wx:for="{{swiperData2}}">
-            <navigator hover-class="none" class="article-item" url='../article/article/article'>
-                <image class="article-clover" src='{{item.imgUrl}}'></image>
-                <view class="article-info">
-                    <text class="article-title">{{item.title}}</text>
-                    <text class="article-description">{{item.discription}}</text>
-                    <view class="article-view">
-                        <image src='../../assets/icons/views_gray.png'></image>{{item.look}}</view>
-                </view>
-            </navigator>
-          </block>
-        </swiper-item>
-    </swiper>
-</view>
-<view class="classify">
-    <view class="classify-title">摄影摄像
-        <navigator class="view-all" url=''>查看全部</navigator>
-    </view>
-    <swiper previous-margin="30rpx" duration="300" next-margin="30rpx" class="article-warp">
-        <swiper-item>
+<view class="classify" wx:for="{{cmsCategories}}" wx:for-item="bigCategory" wx:key="{{bigCategory.id}}" wx:if="{{bigCategory.level == 1}}">
+  <view class="classify-title">{{ bigCategory.name }}
+    <navigator class="view-all" url='/pages/classify/classify?pid={{bigCategory.id}}'>查看全部</navigator>
+  </view>
+  <swiper circular="true" previous-margin="30rpx" duration="300" next-margin="30rpx" class="article-warp">
+    <swiper-item wx:for="{{bigCategory.swiperItems}}" wx:for-item="swiperItem" wx:key="{{index}}">
+      <block wx:for="{{swiperItem}}" wx:for-item="smallCategory">
+        <navigator hover-class="none" class="article-item" url='/pages/classify/classify?pid={{smallCategory.id}}'>
+          <image class="article-clover" src='{{smallCategory.icon}}'></image>
+          <view class="article-info">
+            <text class="article-title">{{smallCategory.name}}</text>
+            <text class="article-description">{{smallCategory.remark}}</text>
+            <view class="article-view">{{smallCategory.key}}</view>
+          </view>
+        </navigator>
+      </block>
 
-            <navigator class="article-item">
-                <image class="article-clover" src='https://s1.ax2x.com/2018/06/26/n580p.th.jpg'></image>
-                <view class="article-info">
-                    <text class="article-title">日用品摄影</text>
-                    <text class="article-description">日用</text>
-                    <view class="article-view">
-                        <image src='../../assets/icons/views_gray.png'></image> 256</view>
-                </view>
-            </navigator>
-            
-            <navigator class="article-item" url='../article/video2/article'>
-                <image class="article-clover" src='https://s1.ax2x.com/2018/07/19/wF663.th.jpg'></image>
-                <view class="article-info">
-                    <text class="article-title">装饰摄影</text>
-                    <text class="article-description">梵格装饰画</text>
-                    <view class="article-view">
-                        <image src='../../assets/icons/views_gray.png'></image> 256</view>
-                </view>
-            </navigator>
-            <navigator class="article-item" url='../article/video1/article'>
-                <image class="article-clover" src='https://s1.ax2x.com/2018/07/19/wFkMG.th.png'></image>
-                <view class="article-info">
-                    <text class="article-title">装饰挂钟</text>
-                    <text class="article-description">居乐尔装饰挂钟拍摄</text>
-                    <view class="article-view">
-                        <image src='../../assets/icons/views_gray.png'></image> 2526</view>
-                </view>
-            </navigator>
-
-
-            
-            
-        </swiper-item>
-        
-    </swiper>
+    </swiper-item>
+  </swiper>
 </view>

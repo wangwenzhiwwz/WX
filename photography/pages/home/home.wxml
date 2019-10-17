@@ -4,7 +4,7 @@
 <swiper class="home-warp" circular="true" duration='300' next-margin="40rpx" previous-margin="40rpx">
   <block wx:for="{{articleList}}" wx:key="{{item.id}}"> 
     <swiper-item class="home-item">
-        <navigator class="article-warp"  url='../article/article/article?id={{item.id}}'>
+        <navigator class="article-warp"  url='../article/article?id={{item.id}}'>
             <image class="main-img" mode='aspectFill' src='{{item.pic}}' ></image>
             <view class="article-info">
                 <view class="title-warp">

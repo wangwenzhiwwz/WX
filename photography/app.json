@@ -7,11 +7,7 @@
     "pages/credits/credits",
     "pages/resume/resume",
     "pages/commentList/commentList",
-    "pages/article/article/article",
-    "pages/article/video1/article",
-    "pages/article/video2/article",
-    "pages/index/index",
-    "pages/logs/logs"
+    "pages/article/article"
   ],
   "window": {
     "backgroundTextStyle": "light",
