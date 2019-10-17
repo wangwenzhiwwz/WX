@@ -5,11 +5,11 @@
 </view>
 <swiper circular="true" previous-margin="30rpx" duration="300" next-margin="30rpx">
   <swiper-item wx:for="{{cmsRecommendCategories}}" wx:key="{{item.id}}">
-    <view class="swiper-item">
+    <view class="swiper-item" bindtap="goArticleList" data-id="{{item.id}}">
       <image src="{{item.icon}}" mode='aspectFill' class="slide-image" />
       <view class="article-info">
         <text class="title">{{item.name}}</text>
-        <text class="discription"></text>
+        <text class="discription">{{item.key}}</text>
       </view>
     </view>
   </swiper-item>

@@ -8,45 +8,6 @@ Page({
   data: {
     cmsCategories: undefined, // 分类列表
     cmsRecommendCategories: undefined, // 推荐的分类列表
-
-
-    swiperData1: [{
-        url: '../article/article5/article',
-        imgUrl: 'https://s1.ax2x.com/2018/08/30/5BGc5H.th.jpg',
-        title: "城市主题",
-        discription: "城市越来越大",
-        look: "1333"
-      },
-      {
-        imgUrl: 'https://s1.ax2x.com/2018/07/17/qkAP2.th.jpg',
-        title: "下班途中",
-        discription: "善于发现身边的美",
-        look: "1356"
-      },
-      {
-        url: '../article/article0/article',
-        imgUrl: 'https://s1.ax2x.com/2018/08/07/55GWi6.th.jpg',
-        title: "家居主题",
-        discription: "温馨才能体现家的价值",
-        look: "1503"
-
-      }
-    ],
-    swiperData2: [{
-        url: '../article/article3/article',
-        imgUrl: 'https://s1.ax2x.com/2018/07/17/qktSa.th.jpg',
-        title: "澳门",
-        discription: "购物天堂",
-        look: "1356"
-      },
-
-      {
-        imgUrl: 'https://s1.ax2x.com/2018/07/07/opAuu.th.jpg',
-        title: "商场主题",
-        discription: "高冷才能看出本质",
-        look: "1333"
-      }
-    ]
   },
 
   /**
@@ -89,6 +50,12 @@ Page({
     // 设置小程序名称
     wx.setNavigationBarTitle({
       title: wx.getStorageSync('mallName')
+    })
+  },
+
+  goArticleList(e){
+    wx.navigateTo({
+      url: '/pages/classify/classify?pid=' + e.currentTarget.dataset.id
     })
   },
 
