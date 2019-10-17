@@ -1,3 +1,4 @@
+@import "/wxParse/wxParse.wxss";
 .article-cover {
     position: relative;
     height: 460rpx;
@@ -7,6 +8,12 @@
     display: block;
     width: 100%;
     height: 100%;
+}
+
+.article-content {
+  margin:30rpx 20rpx 120rpx 20rpx;
+  line-height: 65rpx;
+
 }
 
 .title-warp {

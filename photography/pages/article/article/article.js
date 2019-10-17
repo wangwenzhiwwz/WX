@@ -1,18 +1,42 @@
-// pages/article/article.js
+const WXAPI = require('apifm-wxapi')
+const WxParse = require('../../../wxParse/wxParse.js');
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-  
+    articleDetail: undefined // 文章详情
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
-  
+  async onLoad (options) {
+    const articleId = options.id;
+    // 读取文章详情信息
+    const articleDetail = await WXAPI.cmsArticleDetail(articleId);
+    if (articleDetail.code != 0) {
+      wx.showModal({
+        title: '提示',
+        content: '当前文章不存在',
+        showCancel: false,
+        confirmText: '返回',
+        success(res) {
+          wx.navigateBack()
+        }
+      })
+      return;
+    }
+    this.setData({
+      articleDetail: articleDetail.data
+    });
+    // 设置小程序名称
+    wx.setNavigationBarTitle({
+      title: articleDetail.data.title
+    })
+    // 文章详情
+    WxParse.wxParse('article', 'html', articleDetail.data.content, this, 5);
   },
 
   /**

@@ -1,19 +1,19 @@
 <!--pages/home/home.wxml-->
 <loading></loading>
 
-<swiper class="home-warp" duration='300' next-margin="40rpx" previous-margin="40rpx">
-  <block wx:for="{{swiperData}}" > 
+<swiper class="home-warp" circular="true" duration='300' next-margin="40rpx" previous-margin="40rpx">
+  <block wx:for="{{articleList}}" wx:key="{{item.id}}"> 
     <swiper-item class="home-item">
-        <navigator class="article-warp"  url='{{item.url}}'>
-            <image class="main-img" mode='aspectFill' src='{{item.imgUrl}}' ></image>
+        <navigator class="article-warp"  url='../article/article/article?id={{item.id}}'>
+            <image class="main-img" mode='aspectFill' src='{{item.pic}}' ></image>
             <view class="article-info">
                 <view class="title-warp">
                     <text class="classify"></text>
                     <text class="title">{{item.title}}</text>
-                    <text class="description">{{item.discription}}</text>
+                    <text class="description">{{item.keywords}}</text>
                 </view>
                 <view class="article-view">
-                    <image src='../../assets/icons/views_gray.png'></image> {{item.look}}
+                    <image src='../../assets/icons/views_gray.png'></image> {{item.views}}
                 </view>
             </view>
         </navigator>
