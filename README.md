@@ -11,8 +11,7 @@
 <div>
   <img width=280 src="http://tva1.sinaimg.cn/large/007X8olVly1g874thfu6sj30n01ds4b9.jpg"/>
   <img width=280 src="http://tva1.sinaimg.cn/large/007X8olVly1g874ti0f04j30n01dsq8m.jpg"/>
-  <img width=280 src="http://tva1.sinaimg.cn/large/007X8olVly1g874tighqqj30n01dsq44.jpg
-"/>
+  <img width=280 src="http://tva1.sinaimg.cn/large/007X8olVly1g874tighqqj30n01dsq44.jpg"/>
 </div>
 
 # 邀你加入
