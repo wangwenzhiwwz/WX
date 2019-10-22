@@ -9,9 +9,10 @@
 *页面截图*
 
 <div>
-  <img width=280 src="https://dcdn.it120.cc/2019/10/15/77136159-2648-4ad0-87a9-d206eeb99cbd.png"/>
-  <img width=280 src="https://dcdn.it120.cc/2019/10/15/d964a9f5-2729-4d3a-8766-3bd6ba43debc.png"/>
-  <img width=280 src="https://dcdn.it120.cc/2019/10/15/c16b264b-0b90-4a0f-930a-8c9e4ce5c675.png"/>
+  <img width=280 src="http://tva1.sinaimg.cn/large/007X8olVly1g874thfu6sj30n01ds4b9.jpg"/>
+  <img width=280 src="http://tva1.sinaimg.cn/large/007X8olVly1g874ti0f04j30n01dsq8m.jpg"/>
+  <img width=280 src="http://tva1.sinaimg.cn/large/007X8olVly1g874tighqqj30n01dsq44.jpg
+"/>
 </div>
 
 # 邀你加入
