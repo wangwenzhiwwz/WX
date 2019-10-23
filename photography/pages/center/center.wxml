@@ -1,5 +1,5 @@
 <view>
-    <image class="center_bg" mode='aspectFill' src='https://s1.ax2x.com/2018/07/26/53Bveu.jpg'></image>
+    <image class="center_bg" mode='aspectFill' src='http://tva1.sinaimg.cn/large/007X8olVly1g874lhh73ej30u00kfdi1.jpg'></image>
     <view class="avatar-warp">
         <image class="avatar" mode='aspectFill' src='../../assets/test/1.jpg'></image>
         <view class="nickname">王文志</view>
@@ -7,7 +7,7 @@
         <view class="article-info">
             <view class="article-item"><text class="num">10</text>我的收藏</view>
             <view class="article-item"><text class="num">20</text>我的评论</view>
-            <navigator hover-class='none' url='../credits/credits' class="article-item"><text class="num">160</text>我的积分</navigator>
+            <navigator hover-class='none' url='../credits/credits' class="article-item"><text class="num">160</text>浏览</navigator>
         </view>
     </view>
     <view class="menu-warp">
@@ -26,6 +26,6 @@
 
     </view>
 
-    <button type="default" bindtap="calling" style='width:80%;margin-bottom:20px; background-color:#fc0'>拨打电话</button>
+    
 
 </view>

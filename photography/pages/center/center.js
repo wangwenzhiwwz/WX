@@ -1,27 +1,7 @@
 // pages/center/center.js
 Page({
 
-  calling: function () {
-
-    wx.makePhoneCall({
-
-      phoneNumber: '15797750743', //此号码并非真实电话号码，仅用于测试
-
-      success: function () {
-
-        console.log("拨打电话成功！")
-
-      },
-
-      fail: function () {
-
-        console.log("拨打电话失败！")
-
-      }
-
-    })
-
-  },
+  
 
   /**
    * 页面的初始数据
