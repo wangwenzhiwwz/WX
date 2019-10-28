@@ -346,7 +346,7 @@ module.exports = {
     return request('/shop/goods/price/freight', true, 'get', data);
   },
   goodsRebate: function goodsRebate(token, goodsId) {
-    return request('/shop/goods/rebate', true, 'get', {
+    return request('/shop/goods/rebate/v2', true, 'get', {
       token: token, goodsId: goodsId
     });
   },
@@ -701,7 +701,7 @@ module.exports = {
     return request('/cms/news/useful', true, 'post', data);
   },
   cmsPage: function cmsPage(key) {
-    return request('/cms/page/info', true, 'get', { key: key });
+    return request('/cms/page/info/v2', true, 'get', { key: key });
   },
   cmsTags: function cmsTags() {
     return request('/cms/tags/list', true, 'get', {});
@@ -972,6 +972,9 @@ module.exports = {
     return request('/user/email/bindUsername', true, 'post', {
       token: token, email: email, code: code, pwd: pwd
     });
+  },
+  siteStatistics: function siteStatistics() {
+    return request('/site/statistics', true, 'get');
   }
 };
 

@@ -1,28 +1,42 @@
 const WXAPI = require('apifm-wxapi')
+const WxParse = require('../../wxParse/wxParse.js');
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    articleList: undefined, // 推荐的文章
+    articleDetail: undefined // 文章详情
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   async onLoad (options) {
-    // 读取后台系统设置，保存在小程序的 Storage 里
-    const sysConfigSettings = await WXAPI.queryConfigBatch('mallName,mylogo,myname');
-    if (sysConfigSettings.code == 0) {
-      sysConfigSettings.data.forEach(config => {
-        wx.setStorageSync(config.key, config.value);
+    const key = options.key;
+    // 读取文章详情信息
+    const articleDetail = await WXAPI.cmsPage(key);
+    if (articleDetail.code != 0) {
+      wx.showModal({
+        title: '提示',
+        content: '当前文章不存在',
+        showCancel: false,
+        confirmText: '返回',
+        success(res) {
+          wx.navigateBack()
+        }
       })
+      return;
     }
+    this.setData({
+      articleDetail: articleDetail.data
+    });
     // 设置小程序名称
     wx.setNavigationBarTitle({
-      title: wx.getStorageSync('mallName')
+      title: articleDetail.data.info.title
     })
+    // 文章详情
+    WxParse.wxParse('article', 'html', articleDetail.data.info.content, this, 5);
   },
 
   /**
@@ -35,16 +49,8 @@ Page({
   /**
    * 生命周期函数--监听页面显示
    */
-  async onShow () {
-    // 读取后台推荐的文章列表
-    const articleList = await WXAPI.cmsArticles({
-      isRecommend: true
-    });
-    if (articleList.code == 0) {
-      this.setData({
-        articleList: articleList.data
-      });
-    }
+  onShow: function () {
+  
   },
 
   /**

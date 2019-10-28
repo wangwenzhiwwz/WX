@@ -1,4 +1,4 @@
-// pages/center/center.js
+const WXAPI = require('apifm-wxapi')
 Page({
 
   
@@ -27,8 +27,23 @@ Page({
   /**
    * 生命周期函数--监听页面显示
    */
-  onShow: function () {
-  
+  async onShow () {
+    let fileNumber = 0;
+    let newsNumber = 0;
+    let views = 0;
+    const res = await WXAPI.siteStatistics();
+    if (res.code == 0) {
+      fileNumber = res.data.dfs.count
+      newsNumber = res.data.cmsArticle.numbers
+      views = res.data.cmsArticle.views
+    }
+    this.setData({
+      mylogo: wx.getStorageSync('mylogo'),
+      myname: wx.getStorageSync('myname'),
+      fileNumber,
+      newsNumber,
+      views,
+    })
   },
 
   /**
