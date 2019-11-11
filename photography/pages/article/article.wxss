@@ -120,3 +120,12 @@
     height: 48rpx;
     margin: 0 auto;
 }
+
+.login-profile {
+  font-size: 10pt;
+  color:#999;
+  margin: 20rpx 0;
+}
+.login-float-btn {
+  margin:10rpx 40rpx;
+}

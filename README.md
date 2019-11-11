@@ -28,18 +28,22 @@
 # 快速部署自己的摄影展小程序
 
 1. 免费注册后台账号 [https://admin.it120.cc/](https://admin.it120.cc/)
-2. 克隆测试数据，方便测试
+2. 左侧菜单 “微信设置”，填写你自己的小程序 appid 和 secret
+3. 克隆测试数据，方便测试
    
    登录后，点击左侧菜单 “工厂设置” --> “数据克隆” --> “将别人的数据克隆给我”
 
    填写商户ID:  7709
 
    克隆完成后， F5 刷新后台完成
-3. 修改小程序一句代码
+4. 修改小程序一句代码
    
    app.js 文件中的 WXAPI.init('改为你自己的专属域名') 修改为与你自己的后台对应：
-  [https://blog.csdn.net/abccba9978/article/details/102784311](https://blog.csdn.net/abccba9978/article/details/102784311)
-4. 手机预览
+
+   [https://blog.csdn.net/abccba9978/article/details/102784311](https://blog.csdn.net/abccba9978/article/details/102784311)
+
+5. 手机预览
    
    手机预览，必须设置接口的安全域名，否则会显示一片空白：
+
    [https://blog.csdn.net/abccba9978/article/details/102425361](https://blog.csdn.net/abccba9978/article/details/102425361)

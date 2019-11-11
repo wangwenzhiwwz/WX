@@ -13,7 +13,7 @@ Page({
    */
   async onLoad (options) {
     // 读取后台系统设置，保存在小程序的 Storage 里
-    const sysConfigSettings = await WXAPI.queryConfigBatch('mallName,mylogo,myname');
+    const sysConfigSettings = await WXAPI.queryConfigBatch('mallName,mylogo,myname,tel');
     if (sysConfigSettings.code == 0) {
       sysConfigSettings.data.forEach(config => {
         wx.setStorageSync(config.key, config.value);

@@ -7,9 +7,9 @@
       <image src='../../assets/icons/level.png'></image>影坛新手</view>
     <view class="article-info">
       <view class="article-item">
-        <text class="num">{{newsNumber}}</text>文章</view>
+        <text class="num">{{newsNumber}}</text>作品</view>
       <view class="article-item">
-        <text class="num">{{fileNumber}}</text>照片</view>
+        <text class="num">{{fileNumber}}</text>胶片</view>
       <view class="article-item">
         <text class="num">{{views}}</text>浏览</view>
       <!-- <navigator hover-class='none' url='../credits/credits' class="article-item"><text class="num">{{views}}</text>浏览</navigator> -->
@@ -29,4 +29,5 @@
       <image class="next" src='../../assets/icons/next.png'></image>
     </navigator>
   </view>
+  <button type="default" bindtap="calling" style='width:80%;margin-bottom:20px; background-color:#fc0'>电话联系我</button>
 </view>

@@ -975,6 +975,21 @@ module.exports = {
   },
   siteStatistics: function siteStatistics() {
     return request('/site/statistics', true, 'get');
+  },
+  cmsArticleFavPut: function cmsArticleFavPut(token, newsId) {
+    return request('/cms/news/fav/add', true, 'post', { token: token, newsId: newsId });
+  },
+  cmsArticleFavCheck: function cmsArticleFavCheck(token, newsId) {
+    return request('/cms/news/fav/check', true, 'get', { token: token, newsId: newsId });
+  },
+  cmsArticleFavList: function cmsArticleFavList(data) {
+    return request('/cms/news/fav/list', true, 'post', data);
+  },
+  cmsArticleFavDeleteById: function cmsArticleFavDeleteById(token, id) {
+    return request('/cms/news/fav/delete', true, 'post', { token: token, id: id });
+  },
+  cmsArticleFavDeleteByNewsId: function cmsArticleFavDeleteByNewsId(token, newsId) {
+    return request('/cms/news/fav/delete', true, 'post', { token: token, newsId: newsId });
   }
 };
 

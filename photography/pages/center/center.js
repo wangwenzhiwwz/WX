@@ -79,5 +79,10 @@ Page({
    */
   onShareAppMessage: function () {
   
+  },
+  calling(){
+    wx.makePhoneCall({
+      phoneNumber: wx.getStorageSync('tel')
+    })
   }
 })

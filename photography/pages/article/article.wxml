@@ -1,28 +1,41 @@
 <import src="../../wxParse/wxParse.wxml" />
 <view class="article-cover">
-    <image mode='aspectFill' src="{{ articleDetail.pic }}"></image>
-    <view class="title-warp">
-        <text class="classify">{{ articleDetail.keywords }}</text>
-        <text class="title">{{ articleDetail.title }}</text>
-    </view>
+  <image mode='aspectFill' src="{{ articleDetail.pic }}"></image>
+  <view class="title-warp">
+    <text class="classify">{{ articleDetail.keywords }}</text>
+    <text class="title">{{ articleDetail.title }}</text>
+  </view>
 </view>
 <view class="article-warp">
-    <view class="article-content">
-      <template is="wxParse" data="{{wxParseData:article.nodes}}" />
-    </view>    
-    <view class="tool-bar">
-        <view class="tool">
-            <image src='../../assets/icons/like.png'></image>
-            {{ articleDetail.usefulNumber }}
-        </view>
-        <navigator hover-class='none' class="tool" url='../commentList/commentList'>
-            <image src='../../assets/icons/comment.png'></image>
-            {{ articleDetail.commentNumber }}
-        </navigator>
-        <view class="tool">
-            <button open-type='share'></button>
-            <image src='../../assets/icons/share.png'></image>
-            {{ articleDetail.usefulNumber }}
-        </view>
+  <view class="article-content">
+    <template is="wxParse" data="{{wxParseData:article.nodes}}" />
+  </view>
+  <view class="tool-bar">
+    <view wx:if="{{!faved}}" class="tool" bindtap="fav">
+      <image src='../../assets/icons/like.png'></image>
+      {{ articleDetail.numberFav }}
     </view>
+    <view wx:else class="tool">
+      <image src='../../assets/icons/like_active.png'></image>
+      {{ articleDetail.numberFav }}
+    </view>
+    <navigator hover-class='none' class="tool" url='../commentList/commentList?id={{articleId}}&title={{articleDetail.title}}'>
+      <image src='../../assets/icons/comment.png'></image>
+      {{ articleDetail.commentNumber }}
+    </navigator>
+    <view class="tool">
+      <button open-type='share'></button>
+      <image src='../../assets/icons/share.png'></image>
+      {{ articleDetail.usefulNumber }}
+    </view>
+  </view>
 </view>
+
+
+<action-sheet hidden="{{actionSheetHidden}}" bindchange="listenerActionSheet">
+  <action-sheet-item>
+    <view class="login-profile">登录后才能进行本次操作</view>
+    <button type="primary" class="login-float-btn" open-type="getUserInfo" bindgetuserinfo="onGotUserInfo">授权登录</button>
+  </action-sheet-item>
+  <action-sheet-cancel>取消</action-sheet-cancel>
+</action-sheet>

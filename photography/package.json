@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/wangwenzhiwwz/WX#readme",
   "dependencies": {
-    "apifm-wxapi": "^2.1.0"
+    "apifm-wxapi": "^2.2.0"
   }
 }

@@ -1,11 +1,14 @@
 const WXAPI = require('apifm-wxapi')
 const WxParse = require('../../wxParse/wxParse.js');
+const AUTH = require('../../utils/auth.js');
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    actionSheetHidden: true, // 是都隐藏登录浮窗
+    faved: false, // 是否已收藏    
     articleDetail: undefined // 文章详情
   },
 
@@ -13,6 +16,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   async onLoad (options) {
+    // options.id = 19988
     const articleId = options.id;
     // 读取文章详情信息
     const articleDetail = await WXAPI.cmsArticleDetail(articleId);
@@ -29,6 +33,7 @@ Page({
       return;
     }
     this.setData({
+      articleId: articleId,
       articleDetail: articleDetail.data
     });
     // 设置小程序名称
@@ -37,6 +42,8 @@ Page({
     })
     // 文章详情
     WxParse.wxParse('article', 'html', articleDetail.data.content, this, 5);
+    // 判断是否已收藏
+    this.checkFavStatus()
   },
 
   /**
@@ -50,7 +57,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-  
+
   },
 
   /**
@@ -85,6 +92,73 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {
-  
-  }
+    const token = wx.getStorageSync('token')
+    if (token) {
+      WXAPI.cmsArticleUseless({
+        token,
+        id: this.data.articleId,
+        isUseful: true
+      })
+    }
+    return {
+      title: this.data.articleDetail.title + ' - ' + wx.getStorageSync('mallName'),
+      imageUrl: this.data.articleDetail.pic,
+      path: '/pages/article/article?id=' + this.data.articleId
+    }
+  },
+  checkFavStatus() {
+    const token = wx.getStorageSync('token')
+    if (token) {
+      // 判断是否已收藏
+      WXAPI.cmsArticleFavCheck(token, this.data.articleId).then(res => {
+        if (res.code == 0) {
+          this.setData({
+            faved: true
+          })
+        }
+      })
+    }
+  },
+  async fav () {
+    const token = wx.getStorageSync('token')
+    const logined = await AUTH.checkHasLogined()    
+    if (!logined){
+      this.setData({
+        actionSheetHidden: false
+      })
+      return;
+    }
+    const res = await WXAPI.cmsArticleFavPut(token, this.data.articleId)
+    if (res.code == 0) {
+      wx.showToast({
+        title: '收藏成功',
+        icon: 'success'
+      })
+      this.checkFavStatus()
+    } else {
+      wx.showToast({
+        title: res.msg,
+        icon: 'none'
+      })
+    }
+  },
+  listenerActionSheet () {
+    this.setData({
+      actionSheetHidden: !this.data.actionSheetHidden
+    })
+  },
+  onGotUserInfo(e) {
+    this.setData({
+      actionSheetHidden: true
+    })
+    if (!e.detail.userInfo) {
+      wx.showToast({
+        title: '已取消登录',
+        icon: 'none',
+      })
+      return;
+    }
+    wx.setStorageSync('userInfo', e.detail.userInfo)
+    AUTH.login(this);
+  },
 })
