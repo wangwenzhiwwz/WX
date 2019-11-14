@@ -42,7 +42,8 @@ Page({
    */
   async getComments () {
     const res = await WXAPI.commentList({
-      refId: this.data.articleId
+      refId: this.data.articleId,
+      st: '1,2'
     });
     if (res.code == 0) {
       const list = res.data
@@ -147,9 +148,11 @@ Page({
       content: text.trim()
     }).then(res => {
       if(res.code == 0){
-        wx.showToast({
-          title: '评论成功',
-          icon: 'success'
+        wx.showModal({
+          title: '提交成功',
+          content: '作者审核后即可显示',
+          showCancel: false,
+          confirmText: '知道了'
         })
         this.getComments()
         this.setData({

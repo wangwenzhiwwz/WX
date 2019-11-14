@@ -21,17 +21,17 @@
       <!--  评论内容  -->
       <text class="msg">{{item.content}}</text>
       <!--  回复信息  -->
-      <!-- <view class="reply-list" wx:if="{{!item.reply.length == 0}}">
-        <view class="reply-item" wx:for="{{item.reply}}" wx:key="reply">
+      <view class="reply-list" wx:if="{{item.status == 2}}">
+        <view class="reply-item">
           <view>
-            <image src="{{item.replyUser.avatarUrl}}" />
-            <text class="relpy-name">{{item.replyUser.nickname}}</text>
+            <image src="/assets/icons/admin.png" />
+            <text class="relpy-name">回复:</text>
           </view>
           <view class="reply-text">
-            <text class="text">{{item.replyMsg.text}}</text>
+            <text class="text">{{item.reply}}</text>
           </view>
         </view>
-      </view> -->
+      </view>
     </view>
   </view>
   <text class="end" wx:if="{{!commentList.length == 0}}">我是有底线的</text>
@@ -39,5 +39,5 @@
 </view>
 
 <view class="form-warp">
-  <input type="text" bindblur="inputBlur" placeholder="请输入评论内容" confirm-type="提交" bindconfirm="sendComment" value="{{msg}}" />
+  <input type="text" bindblur="inputBlur" placeholder="请输入评论内容" confirm-type="send" bindconfirm="sendComment" value="{{msg}}" />
 </view>

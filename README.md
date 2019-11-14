@@ -40,10 +40,10 @@
    
    app.js 文件中的 WXAPI.init('改为你自己的专属域名') 修改为与你自己的后台对应：
 
-   [https://blog.csdn.net/abccba9978/article/details/102784311](https://blog.csdn.net/abccba9978/article/details/102784311)
+   [https://www.yuque.com/apifm/doc/qr6l4m](https://www.yuque.com/apifm/doc/qr6l4m)
 
 5. 手机预览
    
    手机预览，必须设置接口的安全域名，否则会显示一片空白：
 
-   [https://blog.csdn.net/abccba9978/article/details/102425361](https://blog.csdn.net/abccba9978/article/details/102425361)
+   [https://www.yuque.com/apifm/doc/tvpou9](https://www.yuque.com/apifm/doc/tvpou9)
