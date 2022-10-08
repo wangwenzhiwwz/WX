@@ -6,13 +6,6 @@
   <img width=280 src="https://dcdn.it120.cc/2019/10/22/b89980c3-1a73-48d9-b52d-106417b93010.jpeg"/>
 </div>
 
-*页面截图*
-
-<div>
-  <img width=280 src="http://tva1.sinaimg.cn/large/007X8olVly1g874thfu6sj30n01ds4b9.jpg"/>
-  <img width=280 src="http://tva1.sinaimg.cn/large/007X8olVly1g874ti0f04j30n01dsq8m.jpg"/>
-  <img width=280 src="http://tva1.sinaimg.cn/large/007X8olVly1g874tighqqj30n01dsq44.jpg"/>
-</div>
 
 # 邀你加入
 
@@ -47,3 +40,11 @@
    手机预览，必须设置接口的安全域名，否则会显示一片空白：
 
    [https://www.yuque.com/apifm/doc/tvpou9](https://www.yuque.com/apifm/doc/tvpou9)
+
+# 其他优秀开源模板推荐
+- [天使童装](https://github.com/EastWorld/wechat-app-mall) [码云镜像](https://gitee.com/javazj/wechat-app-mall)
+- [天使童装（uni-app版本）](https://github.com/gooking/uni-app-mall) [码云镜像](https://gitee.com/javazj/uni-app-mall)
+- [舔果果小铺（升级版）](https://github.com/gooking/TianguoguoXiaopu)
+- [面馆风格小程序](https://gitee.com/javazj/noodle_shop_procedures)
+- [AI名片](https://github.com/gooking/visitingCard)
+- [仿海底捞订座排队 (uni-app)](https://github.com/gooking/dingzuopaidui) [码云镜像](https://gitee.com/javazj/dingzuopaidui)
