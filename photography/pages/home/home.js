@@ -37,12 +37,12 @@ Page({
    */
   async onShow () {
     // 读取后台推荐的文章列表
-    const articleList = await WXAPI.cmsArticles({
+    const articleList = await WXAPI.cmsArticlesV2({
       isRecommend: true
     });
     if (articleList.code == 0) {
       this.setData({
-        articleList: articleList.data
+        articleList: articleList.data.result
       });
     }
   },

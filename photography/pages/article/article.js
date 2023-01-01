@@ -120,15 +120,12 @@ Page({
     }
   },
   async fav () {
-    const token = wx.getStorageSync('token')
     const logined = await AUTH.checkHasLogined()    
     if (!logined){
-      this.setData({
-        actionSheetHidden: false
-      })
+      await AUTH.authorize()
       return;
     }
-    const res = await WXAPI.cmsArticleFavPut(token, this.data.articleId)
+    const res = await WXAPI.cmsArticleFavPut(wx.getStorageSync('token'), this.data.articleId)
     if (res.code == 0) {
       wx.showToast({
         title: '收藏成功',

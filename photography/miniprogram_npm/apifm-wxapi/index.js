@@ -303,6 +303,9 @@ module.exports = {
   register_simple: function register_simple(data) {
     return request('/user/wxapp/register/simple', true, 'post', data);
   },
+  authorize: (data) => {
+    return request('/user/wxapp/authorize', true, 'post', data)
+  },
   register_username: function register_username(data) {
     return request('/user/username/register', true, 'post', data);
   },
@@ -681,6 +684,9 @@ module.exports = {
   },
   cmsArticles: function cmsArticles(data) {
     return request('/cms/news/list', true, 'post', data);
+  },
+  cmsArticlesV2: (data) => {
+    return request('/cms/news/list/v2', true, 'post', data)
   },
   cmsArticleUsefulLogs: function cmsArticleUsefulLogs(data) {
     return request('/cms/news/useful/logs', true, 'post', data);

@@ -6,6 +6,7 @@ Page({
    */
   data: {
     page: 1, // 读取第几页数据，便于实现下滑分页
+    categoryId: undefined,
     articleList: [] // 文章列表
   },
 
@@ -32,63 +33,50 @@ Page({
       title: wx.getStorageSync('mallName')
     })    
     this.setData({
+      categoryId: options.pid,
       categoryInfo: categoryInfo.data
     });
     // 读取分类下的文章
-    this.fetchArticles(options.pid);
+    this.fetchArticles();
   },
-
-  async fetchArticles (pid) {
-    const response = await WXAPI.cmsArticles({
+  onReachBottom() {
+    this.data.page++
+    this.fetchArticles()
+  },
+  async fetchArticles () {
+    const response = await WXAPI.cmsArticlesV2({
       page: this.data.page,
-      categoryId: pid
+      categoryId: this.data.categoryId,
+      pageSize: 20
     });
     if (response.code == 0) {
-      this.setData({
-        articleList: this.data.articleList.concat(response.data)
-      });
+      if (this.data.page == 1) {
+        this.setData({
+          articleList: response.data.result
+        })
+      } else {
+        this.setData({
+          articleList: this.data.articleList.concat(response.data.result)
+        });
+      }
+    } else {
+      if (this.data.page == 1) {
+        wx.showToast({
+          title: '暂无数据～',
+          icon: 'none'
+        })
+      } else {
+        wx.showToast({
+          title: '没有更多了～',
+          icon: 'none'
+        })
+      }
     }
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
   onReady: function () {
   
   },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
   onShow: function () {
-  
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-  
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-  
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-  
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
   
   },
 

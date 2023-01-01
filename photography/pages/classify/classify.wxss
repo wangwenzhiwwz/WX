@@ -1,5 +1,6 @@
 page {
     background: #f2f2f2;
+    padding-bottom: 32rpx;
 }
 
 .classify-title {
