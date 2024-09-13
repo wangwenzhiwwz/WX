@@ -19,10 +19,13 @@ Page({
     // options.id = 19988
     const articleId = options.id;
     // 读取文章详情信息
-    const articleDetail = await WXAPI.cmsArticleDetail(articleId);
+    // https://www.yuque.com/apifm/nu0f75/dv76qr
+    const articleDetail = await WXAPI.cmsArticleDetailV3({
+      id: articleId,
+      token: wx.getStorageSync('token')
+    });
     if (articleDetail.code != 0) {
       wx.showModal({
-        title: '提示',
         content: '当前文章不存在',
         showCancel: false,
         confirmText: '返回',
@@ -34,14 +37,14 @@ Page({
     }
     this.setData({
       articleId: articleId,
-      articleDetail: articleDetail.data
+      articleDetail: articleDetail.data.info
     });
     // 设置小程序名称
     wx.setNavigationBarTitle({
-      title: articleDetail.data.title
+      title: articleDetail.data.info.title
     })
     // 文章详情
-    WxParse.wxParse('article', 'html', articleDetail.data.content, this, 5);
+    WxParse.wxParse('article', 'html', articleDetail.data.info.content, this, 5);
     // 判断是否已收藏
     this.checkFavStatus()
   },
@@ -94,6 +97,7 @@ Page({
   onShareAppMessage: function () {
     const token = wx.getStorageSync('token')
     if (token) {
+      // https://www.yuque.com/apifm/nu0f75/tpbiyc
       WXAPI.cmsArticleUseless({
         token,
         id: this.data.articleId,
@@ -110,6 +114,7 @@ Page({
     const token = wx.getStorageSync('token')
     if (token) {
       // 判断是否已收藏
+      // https://www.yuque.com/apifm/nu0f75/kgbl8x2nyhww7ghw
       WXAPI.cmsArticleFavCheck(token, this.data.articleId).then(res => {
         if (res.code == 0) {
           this.setData({
@@ -125,6 +130,7 @@ Page({
       await AUTH.authorize()
       return;
     }
+    // https://www.yuque.com/apifm/nu0f75/dsgvlrc01usqzw29
     const res = await WXAPI.cmsArticleFavPut(wx.getStorageSync('token'), this.data.articleId)
     if (res.code == 0) {
       wx.showToast({

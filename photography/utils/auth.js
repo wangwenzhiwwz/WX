@@ -22,6 +22,7 @@ async function bindSeller() {
   if (!referrer) {
     return
   }
+  // https://www.yuque.com/apifm/nu0f75/fmu71a
   const res = await WXAPI.bindSeller({
     token,
     uid: referrer
@@ -39,6 +40,7 @@ async function checkHasLogined() {
     wx.removeStorageSync('token')
     return false
   }
+  // https://www.yuque.com/apifm/nu0f75/mp9f59
   const checkTokenRes = await WXAPI.checkToken(token)
   if (checkTokenRes.code != 0) {
     wx.removeStorageSync('token')
@@ -94,6 +96,7 @@ async function login(page){
           }
         })
       } else {
+        // https://www.yuque.com/apifm/nu0f75/qt5o3d
         WXAPI.login_wx(res.code).then(function (res) {        
           if (res.code == 10000) {
             // 去注册
@@ -157,6 +160,7 @@ async function authorize() {
             }
           })
         } else {
+          // https://www.yuque.com/apifm/nu0f75/tyisgg
           WXAPI.authorize({
             code: code,
             referrer: referrer

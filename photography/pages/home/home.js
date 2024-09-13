@@ -13,6 +13,7 @@ Page({
    */
   async onLoad (options) {
     // 读取后台系统设置，保存在小程序的 Storage 里
+    // https://www.yuque.com/apifm/nu0f75/dis5tl
     const sysConfigSettings = await WXAPI.queryConfigBatch('mallName,mylogo,myname,tel');
     if (sysConfigSettings.code == 0) {
       sysConfigSettings.data.forEach(config => {
@@ -37,7 +38,8 @@ Page({
    */
   async onShow () {
     // 读取后台推荐的文章列表
-    const articleList = await WXAPI.cmsArticlesV2({
+    // https://www.yuque.com/apifm/nu0f75/tokarq
+    const articleList = await WXAPI.cmsArticlesV3({
       isRecommend: true
     });
     if (articleList.code == 0) {

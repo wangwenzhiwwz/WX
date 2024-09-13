@@ -1,11 +1,12 @@
 const WXAPI = require('apifm-wxapi')
 const AUTH = require('utils/auth')
-
+const CONFIG = require('config.js')
 
 App({
   onLaunch() {
     // 启动小程序
-    WXAPI.init('photography')
+    WXAPI.init(CONFIG.subDomain)
+    WXAPI.setMerchantId(CONFIG.merchantId)
     // 检测新版本
     const updateManager = wx.getUpdateManager()
     updateManager.onUpdateReady(function () {

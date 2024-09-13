@@ -15,6 +15,7 @@ Page({
    */
   async onLoad (options) {
     // 读取分类详情
+    // https://www.yuque.com/apifm/nu0f75/slu10w
     const categoryInfo = await WXAPI.cmsCategoryDetail(options.pid);
     if (categoryInfo.code != 0) {
       wx.showModal({
@@ -44,7 +45,8 @@ Page({
     this.fetchArticles()
   },
   async fetchArticles () {
-    const response = await WXAPI.cmsArticlesV2({
+    // https://www.yuque.com/apifm/nu0f75/tokarq
+    const response = await WXAPI.cmsArticlesV3({
       page: this.data.page,
       categoryId: this.data.categoryId,
       pageSize: 20

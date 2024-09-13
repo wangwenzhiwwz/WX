@@ -31,6 +31,7 @@ Page({
     let fileNumber = 0;
     let newsNumber = 0;
     let views = 0;
+    // https://www.yuque.com/apifm/nu0f75/fpvc3m
     const res = await WXAPI.siteStatistics();
     if (res.code == 0) {
       fileNumber = res.data.dfs.count

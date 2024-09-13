@@ -40,12 +40,13 @@ Page({
    * 获取评论列表
    */
   async getComments () {
-    const res = await WXAPI.commentList({
+    // https://www.yuque.com/apifm/nu0f75/uexfid
+    const res = await WXAPI.commentListV2({
       refId: this.data.articleId,
       st: '1,2'
     });
     if (res.code == 0) {
-      const list = res.data
+      const list = res.data.result
       list.forEach(ele => {
         if (!ele.uid) {
           const commentUserInfo = {
@@ -140,6 +141,7 @@ Page({
       return false;
     }
     // 提交评论
+    // https://www.yuque.com/apifm/nu0f75/xkug1y
     WXAPI.addComment({
       token: wx.getStorageSync('token'),
       refId: this.data.articleId,

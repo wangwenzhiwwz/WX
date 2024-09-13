@@ -15,10 +15,10 @@ Page({
   async onLoad (options) {
     const key = options.key;
     // 读取文章详情信息
+    // https://www.yuque.com/apifm/nu0f75/utgp8i
     const articleDetail = await WXAPI.cmsPage(key);
     if (articleDetail.code != 0) {
       wx.showModal({
-        title: '提示',
         content: '当前文章不存在',
         showCancel: false,
         confirmText: '返回',

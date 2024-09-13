@@ -15,6 +15,7 @@ Page({
    */
   async onLoad(options) {
     // 加载所有的分类数据
+    // https://www.yuque.com/apifm/nu0f75/slu10w
     const cmsCategories = await WXAPI.cmsCategories();
     if (cmsCategories.code == 0) {
       const _cmsCategories = cmsCategories.data; // 所有分类数据
